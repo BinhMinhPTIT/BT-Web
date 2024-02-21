@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Quản lý sinh viên</title>
+</head>
+<body>
+<div class="container">
+    <h1>Quản lý sinh viên</h1>
+    <div class="form-group">
+        <label for="studentID">Mã sinh viên:</label>
+        <input type="text" id="studentID" />
+    </div>
+    <div class="form-group">
+        <label for="fullName">Họ và tên:</label>
+        <input type="text" id="fullName" />
+    </div>
+    <div class="form-group">
+        <label for="dob">Ngày tháng năm sinh:</label>
+        <input type="date" id="dob" />
+    </div>
+    <div class="form-group">
+        <label for="class">Lớp học:</label>
+        <input type="text" id="class" />
+    </div>
+    <div class="form-group">
+        <label for="gpa">Điểm GPA:</label>
+        <input type="number" id="gpa" step="0.01" />
+    </div>
+    <button class="btn" onclick="addStudent()">Thêm sinh viên</button>
+    <button class="btn" onclick="updateStudent()">Cập nhật sinh viên</button>
+
+    <h2>Danh sách sinh viên</h2>
+    <table id="studentTable">
+        <tr>
+            <th>Mã SV</th>
+            <th>Họ và tên</th>
+            <th>Ngày sinh</th>
+            <th>Lớp học</th>
+            <th>GPA</th>
+        </tr>
+    </table>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
